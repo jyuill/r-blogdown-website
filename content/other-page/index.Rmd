@@ -1,0 +1,43 @@
+---
+title: other page
+author: JYE
+date: '2021-12-30'
+slug: other-page
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE,
+                      echo=FALSE,
+                      message=FALSE,
+                      warning=FALSE)
+
+library(tidygraph)
+library(scales)
+library(lubridate)
+library(plotly)
+library(dygraphs)
+library(zoo)
+
+theme_set(theme_bw())
+```
+
+# This is the OTHER PAGE 
+
+The other one I mentioned!
+
+## Time series!
+
+Time for some time series:
+
+```{r}
+econo <- economics
+head(econo)
+```
+
+```{r}
+econo_ts <- ts(econo)
+dygraph(econo_ts) %>% dyRangeSelector()
+```
+

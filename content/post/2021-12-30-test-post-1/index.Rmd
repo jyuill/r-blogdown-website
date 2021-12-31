@@ -1,0 +1,30 @@
+---
+title: Test Post 1
+author: JY
+date: '2021-12-30'
+slug: test-post-1
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE,
+                      echo=FALSE,
+                      message=FALSE,
+                      warning=FALSE)
+
+library(tidygraph)
+library(scales)
+library(lubridate)
+library(plotly)
+
+theme_set(theme_bw())
+```
+
+Air Quality of New York data set
+
+```{r}
+airquality %>% ggplot(aes(x=Wind, y=Temp))+geom_point()+
+  labs(title='Wind vs Temperature')
+```
+
