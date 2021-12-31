@@ -24,7 +24,8 @@ theme_set(theme_bw())
 Air Quality of New York data set
 
 ```{r}
-airquality %>% ggplot(aes(x=Wind, y=Temp))+geom_point()+
+paq <- airquality %>% ggplot(aes(x=Wind, y=Temp))+geom_point()+
   labs(title='Wind vs Temperature')
+ggplotly(paq)
 ```
 

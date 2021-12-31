@@ -36,6 +36,8 @@ econo <- economics
 head(econo)
 ```
 
+Dygraph with Range Selector:
+
 ```{r}
 econo_ts <- ts(econo)
 dygraph(econo_ts) %>% dyRangeSelector()
