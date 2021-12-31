@@ -14,7 +14,7 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: Other
+    - name: A1 Other
       url: /other-page/
     - name: About Blogdown
       url: /about/
