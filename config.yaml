@@ -39,7 +39,7 @@ params:
   logo:
     alt: Gear
     height: 50
-    url: img/gear-red.png
+    url: images/gear-red.png
     width: 50
 markup:
   defaultMarkdownHandler: goldmark
