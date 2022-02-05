@@ -42,7 +42,7 @@ params:
   logo:
     alt: gear
     height: 50
-    url: logo.png
+    url: logo.png ## save in static/images
     width: 50
 markup:
   defaultMarkdownHandler: goldmark
