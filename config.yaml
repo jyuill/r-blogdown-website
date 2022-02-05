@@ -19,6 +19,7 @@ menu:
   main:
     - name: Home 
       url: /
+      weight: 1
     - name: A1 Other
       url: /other-page/
     - name: About Blogdown
@@ -41,7 +42,7 @@ params:
   logo:
     alt: gear
     height: 50
-    url: logo.png
+    url: gear-red.png
     width: 50
 markup:
   defaultMarkdownHandler: goldmark
