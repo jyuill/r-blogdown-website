@@ -1,4 +1,5 @@
-baseurl: /
+#baseurl: /
+baseurl: https://johnyuill.netlify.app/
 languageCode: en-us
 title: Website with R - test
 theme: hugo-lithium
@@ -12,7 +13,8 @@ ignoreFiles:
   - \.utf8\.md$
 permalinks:
   #post: /:year/:month/:day/:slug/
-  post: /:slug/
+  #post: /:slug/
+  posts: /:slug/
 menu:
   main:
     - name: A1 Other
@@ -35,9 +37,9 @@ params:
   highlightjsTheme: github
   highlightjsVersion: 9.12.0
   logo:
-    alt: Logo
+    alt: Gear
     height: 50
-    url: logo.png
+    url: gear-red.png
     width: 50
 markup:
   defaultMarkdownHandler: goldmark
