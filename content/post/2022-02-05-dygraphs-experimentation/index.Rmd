@@ -1,0 +1,42 @@
+---
+title: dygraphs-experimentation
+author: Package Build
+date: '2022-02-05'
+slug: dygraphs-experimentation
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message=FALSE,
+                      warning=FALSE,
+                      fig.height=4,
+                      fig.width=8)
+options(scipen = 99)
+options(digits=3)
+
+library(tidyverse)
+library(xts)
+library(dygraphs)
+library(quantmod)
+library(here)
+library(lubridate)
+library(forecast)
+#library(widgetframe) ## to handle html widgets by putting in iframe
+```
+
+## Checking out Dygraphs
+
+Question: do dygraphs work in R blogdown on Netlify?
+
+* On another site, work on local server but not on Netlify.
+
+```{r}
+ea_price <- getSymbols(Symbols='EA', from='2020-01-01', to='2022-02-04', auto.assign = FALSE)
+```
+
+```{r}
+dygraph(OHLC(ea_price))
+```
+
